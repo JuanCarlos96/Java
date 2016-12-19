@@ -13,15 +13,19 @@ public class ProgramacionJava {
         String pregunta;
         int aleatorio;
         
-        System.out.println("Pregúntame");
+        System.out.println("Pregúntame(Fin para terminar)");
         pregunta= teclado.nextLine();
         
-        aleatorio = rnd.nextInt(2)+1;
-        
-        if (aleatorio==1){
-            System.out.println("Sí");
-        }else{
-            System.out.println("No");
+        while (!(pregunta.equals("Fin"))){
+            aleatorio = rnd.nextInt(2)+1;
+
+            if (aleatorio==1){
+                System.out.println("Sí");
+            }else{
+                System.out.println("No");
+            }
+            System.out.println("Pregúntame(Fin para terminar)");
+            pregunta= teclado.nextLine();
         }
         
     }
