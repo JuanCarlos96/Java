@@ -1,8 +1,8 @@
-package programacionjava;
+package programasino;
 import java.util.Scanner;
 import java.util.Random;
 
-public class ProgramacionJava {
+public class ProgramaSiNo {
     public static void main(String[] args) {
         
         //Inicializo las clases y les doy un nombre para luego usarlas
