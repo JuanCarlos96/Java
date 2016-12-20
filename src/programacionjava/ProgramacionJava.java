@@ -28,5 +28,6 @@ public class ProgramacionJava {
             pregunta= teclado.nextLine();
         }
         
+        System.out.println("Adiós");
     }
 }
