@@ -14,6 +14,7 @@ public class ejercicio3 {
         
         int a,aleatorio;
         
+        //Genero un aleatorio entre 1 y 10
         aleatorio = rnd.nextInt(10)+1;
         
         System.out.println("Escribe un número para averiguarlo(entre 1 y 10)");

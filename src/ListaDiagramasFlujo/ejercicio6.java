@@ -1,5 +1,5 @@
 /*
-DECIR EL MAYOR DE 3 NÚMEROS
+DECIR EL MAYOR DE 3 NÚMEROS, SI ALGUNO ES IGUAL A OTRO, VOLVER A PEDIRLOS
 */
 package ListaDiagramasFlujo;
 
@@ -16,7 +16,7 @@ public class ejercicio6 {
         b = teclado.nextInt();
         c = teclado.nextInt();
         
-        while(a==b || b==c){
+        while(a==b || b==c || a==c){
             System.out.println("Hay números iguales, vuelve a introducirlos:");
             a = teclado.nextInt();
             b = teclado.nextInt();

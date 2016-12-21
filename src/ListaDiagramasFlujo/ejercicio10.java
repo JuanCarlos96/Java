@@ -1,31 +1,29 @@
 /*
-DECIR EL MAYOR DE 2 NÚMEROS, SI SON IGUALES VOLVER A PEDIR LOS NÚMEROS
+LEER DOS NÚMEROS Y ORDENARLOS DE MAYOR A MENOR
 */
 package ListaDiagramasFlujo;
-
 import java.util.Scanner;
 
-public class ejercicio5 {
+public class ejercicio10 {
     public static void main(String[] args){
         
         Scanner teclado = new Scanner(System.in);
         int a,b;
         
-        System.out.println("Introduce dos números:");
+        System.out.println("Introduce dos números");
         a = teclado.nextInt();
         b = teclado.nextInt();
         
         while(a==b){
-            System.out.println("Los números son iguales, vuelve a introducirlos:");
+            System.out.println("Los números son iguales, vuelve a introducirlos");
             a = teclado.nextInt();
             b = teclado.nextInt();
         }
         
-        if(a>b){
-            System.out.println(a+" es mayor que "+b);
+        if(a<b){
+            System.out.println(b+" > "+a);
         }else{
-            System.out.println(b+" es mayor que "+a);
+            System.out.println(a+" > "+b);
         }
-        
     }
 }

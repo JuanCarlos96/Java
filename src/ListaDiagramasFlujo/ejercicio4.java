@@ -1,5 +1,5 @@
 /*
-SUMA DE LOS N PRIMEROS NÚMEROS
+SUMA DE LOS N PRIMEROS NÚMEROS NATURALES
 */
 package ListaDiagramasFlujo;
 
