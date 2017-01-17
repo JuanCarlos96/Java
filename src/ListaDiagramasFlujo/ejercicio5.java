@@ -13,16 +13,18 @@ public class ejercicio5 {
         
         System.out.println("Introduce dos números:");
         
+        cad1 = teclado.nextLine();
+        cad2 = teclado.nextLine();
+        a = Integer.parseInt(cad1);
+        b = Integer.parseInt(cad2);
+        
         try{
-            cad1 = teclado.nextLine();
-            cad2 = teclado.nextLine();
-            a = Integer.parseInt(cad1);
-            b = Integer.parseInt(cad2);
-
             while(a==b){
                 System.out.println("Los números son iguales, vuelve a introducirlos:");
-                a = teclado.nextInt();
-                b = teclado.nextInt();
+                cad1 = teclado.nextLine();
+                cad2 = teclado.nextLine();
+                a = Integer.parseInt(cad1);
+                b = Integer.parseInt(cad2);
             }
 
             if(a>b){
