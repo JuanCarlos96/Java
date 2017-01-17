@@ -10,17 +10,21 @@ public class ejercicio1 {
         Scanner teclado = new Scanner(System.in);
         int a;
         
-        System.out.println("Introduzca un número");
-        a = teclado.nextInt();
-        
-        if(a<0){
-            System.out.println("El número es negativo");
-        }else{
-            if(a>0){
-                System.out.println("El número es positivo");
+        try {
+            System.out.println("Introduzca un número");
+            a = teclado.nextInt();
+
+            if(a<0){
+                System.out.println("El número es negativo");
             }else{
-                System.out.println("El número es un cero");
+                if(a>0){
+                    System.out.println("El número es positivo");
+                }else{
+                    System.out.println("El número es un cero");
+                }
             }
+        }catch (Exception e){
+            System.out.println("Error");
         }
     }
 }
