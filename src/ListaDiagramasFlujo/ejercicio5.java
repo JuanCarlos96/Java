@@ -12,25 +12,23 @@ public class ejercicio5 {
         String cad1,cad2;
         
         System.out.println("Introduce dos números:");
-        
-        cad1 = teclado.nextLine();
-        cad2 = teclado.nextLine();
-        a = Integer.parseInt(cad1);
-        b = Integer.parseInt(cad2);
-        
+
         try{
-            while(a==b){
-                System.out.println("Los números son iguales, vuelve a introducirlos:");
+            do{
                 cad1 = teclado.nextLine();
                 cad2 = teclado.nextLine();
                 a = Integer.parseInt(cad1);
                 b = Integer.parseInt(cad2);
-            }
+            }while(a==b);
 
             if(a>b){
                 System.out.println(a+" es mayor que "+b);
             }else{
-                System.out.println(b+" es mayor que "+a);
+                if(a<b){
+                    System.out.println(b+" es mayor que "+a);
+                }else{
+                    System.out.println("Los números son iguales, vuelve a introducirlos:");
+                }
             }
         }catch (Exception e){
             System.out.println("Error, uno o varios datos no son un número");
