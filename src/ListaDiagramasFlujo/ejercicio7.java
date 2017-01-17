@@ -9,14 +9,17 @@ public class ejercicio7 {
         
         Scanner teclado = new Scanner(System.in);
         int a,cant,max=-9999999;
+        String cad1,cad2;
         
         System.out.println("Introduce cantidad de números a comparar");
-        cant = teclado.nextInt();
+        cad1 = teclado.nextLine();
+        cant = Integer.parseInt(cad1);
         
         System.out.println("Introduzca los números:");
         
         for(int i=1; i<=cant; i++){
-            a = teclado.nextInt();
+            cad2 = teclado.nextLine();
+            a = Integer.parseInt(cad2);
             if(a>max){
                 max=a;
             }

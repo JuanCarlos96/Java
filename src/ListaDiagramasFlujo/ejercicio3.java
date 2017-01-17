@@ -8,7 +8,8 @@ import java.util.Scanner;
 public class ejercicio3 {
     public static void main(String[] args){
         
-        int numero;       
+        int numero;
+        String cadena;
 
         Scanner in = new Scanner(System.in);
         Random r = new Random();
@@ -19,7 +20,7 @@ public class ejercicio3 {
         while (!encontrado) {
             try {
                 System.out.print("Introduzca un número: ");
-                String cadena = in.nextLine();            
+                cadena = in.nextLine();            
 
                 numero = Integer.parseInt(cadena);
 

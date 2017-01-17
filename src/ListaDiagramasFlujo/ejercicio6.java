@@ -9,17 +9,25 @@ public class ejercicio6 {
         
         Scanner teclado = new Scanner(System.in);
         int a,b,c;
+        String cad1,cad2,cad3;
         
         System.out.println("Introduce tres números:");
-        a = teclado.nextInt();
-        b = teclado.nextInt();
-        c = teclado.nextInt();
+        cad1 = teclado.nextLine();
+        cad2 = teclado.nextLine();
+        cad3 = teclado.nextLine();
+        a = Integer.parseInt(cad1);
+        b = Integer.parseInt(cad2);
+        c = Integer.parseInt(cad3);
+        
         
         while(a==b || b==c || a==c){
             System.out.println("Hay números iguales, vuelve a introducirlos:");
-            a = teclado.nextInt();
-            b = teclado.nextInt();
-            c = teclado.nextInt();
+            cad1 = teclado.nextLine();
+            cad2 = teclado.nextLine();
+            cad3 = teclado.nextLine();
+            a = Integer.parseInt(cad1);
+            b = Integer.parseInt(cad2);
+            c = Integer.parseInt(cad3);
         }
         
         if(a>b && a>c){

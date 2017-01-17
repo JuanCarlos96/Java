@@ -10,9 +10,11 @@ public class ejercicio2 {
         Scanner teclado = new Scanner(System.in);
         
         int a;
+        String cad;
         
         System.out.print("Escribe un número: ");
-        a = teclado.nextInt();
+        cad = teclado.nextLine();
+        a = Integer.parseInt(cad);
         
         for(int i=1; i<=a; i++){
             System.out.println(i);
