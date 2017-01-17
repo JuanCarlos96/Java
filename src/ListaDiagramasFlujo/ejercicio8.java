@@ -1,6 +1,5 @@
-/*
-SUMA DE PARES E IMPARES HASTA UN NÚMERO N
-*/
+//SUMA DE PARES E IMPARES HASTA UN NÚMERO N
+
 package ListaDiagramasFlujo;
 
 import java.util.Scanner;

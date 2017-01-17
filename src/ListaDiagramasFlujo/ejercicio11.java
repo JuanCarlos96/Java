@@ -1,6 +1,5 @@
-/*
-DECIR SI UN NÚMERO N ENTERO ES PRIMO O NO
- */
+//DECIR SI UN NÚMERO N ENTERO ES PRIMO O NO
+
 package ListaDiagramasFlujo;
 import java.util.Scanner;
 

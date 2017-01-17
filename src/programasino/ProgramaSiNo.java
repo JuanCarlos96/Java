@@ -17,28 +17,12 @@ public class ProgramaSiNo {
         pregunta= teclado.nextLine();
         
         while (!(pregunta.equals("Fin"))){
-            aleatorio = rnd.nextInt(6)+1;
+            aleatorio = rnd.nextInt(2)+1;
 
             if (aleatorio==1){
                 System.out.println("Sí");
             }else{
-                if (aleatorio==2){
-                    System.out.println("No");
-                }else{
-                    if (aleatorio==3){
-                        System.out.println("No lo sé, no soy 100tífiko");
-                    }else{
-                        if (aleatorio==4){
-                            System.out.println("Claro que sí guapi");
-                        }else{
-                            if (aleatorio==5){
-                                System.out.println("Posiblemente");
-                            }else{
-                                System.out.println("Aún no te lo puedo decir");
-                            }
-                        }
-                    }
-                }
+                System.out.println("No");
             }
             System.out.println("Pregúntame(Fin para terminar)");
             pregunta= teclado.nextLine();

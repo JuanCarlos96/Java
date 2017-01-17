@@ -1,6 +1,5 @@
-/*
-MOSTRAR LA TABLA DE MULTIPLICAR DE UN NÚMERO
- */
+//MOSTRAR LA TABLA DE MULTIPLICAR DE UN NÚMERO
+
 package ListaDiagramasFlujo;
 import java.util.Scanner;
 

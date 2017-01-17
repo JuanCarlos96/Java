@@ -1,6 +1,5 @@
-/*
-COMPROBAR SI UN NÚMERO ES +,- Ó 0
-*/
+//COMPROBAR SI UN NÚMERO ES +,- Ó 0
+
 package ListaDiagramasFlujo;
 
 import java.util.Scanner;

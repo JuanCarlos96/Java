@@ -1,6 +1,5 @@
-/*
-LEER TRES NÚMEROS Y ORDENARLOS DE MAYOR A MENOR
-*/
+//LEER TRES NÚMEROS Y ORDENARLOS DE MAYOR A MENOR
+
 package ListaDiagramasFlujo;
 import java.util.Scanner;
 

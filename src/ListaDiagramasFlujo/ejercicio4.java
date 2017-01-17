@@ -1,6 +1,5 @@
-/*
-SUMA DE LOS N PRIMEROS NÚMEROS NATURALES
-*/
+//SUMA DE LOS N PRIMEROS NÚMEROS NATURALES
+
 package ListaDiagramasFlujo;
 
 import java.util.Scanner;

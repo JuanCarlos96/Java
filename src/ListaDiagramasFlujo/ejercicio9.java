@@ -1,6 +1,5 @@
-/*
-MÁXIMO Y MÍNIMO DE UNA LISTA DE NÚMEROS INTRODUCIDA POR EL USUARIO
- */
+//MÁXIMO Y MÍNIMO DE UNA LISTA DE NÚMEROS INTRODUCIDA POR EL USUARIO
+
 package ListaDiagramasFlujo;
 import java.util.Scanner;
 

@@ -1,6 +1,5 @@
-/*
-CONTAR DESDE 1 HASTA UN NÚMERO DADO POR EL USUARIO
-*/
+//CONTAR DESDE 1 HASTA UN NÚMERO DADO POR EL USUARIO
+
 package ListaDiagramasFlujo;
 
 import java.util.Scanner;

@@ -1,6 +1,5 @@
-/*
-LEER DOS NÚMEROS Y ORDENARLOS DE MAYOR A MENOR
-*/
+//LEER DOS NÚMEROS Y ORDENARLOS DE MAYOR A MENOR
+
 package ListaDiagramasFlujo;
 import java.util.Scanner;
 

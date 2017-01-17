@@ -1,6 +1,5 @@
-/*
-AÑOS, MESES Y DIAS DE UN NUMERO DE DIAS
- */
+//AÑOS, MESES Y DIAS DE UN NUMERO DE DIAS
+
 package ListaDiagramasFlujo;
 import java.util.Scanner;
 

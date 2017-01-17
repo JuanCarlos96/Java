@@ -1,6 +1,5 @@
-/*
-ADIVINAR UN NÚMERO A BASE DE INTENTARLO
-*/
+//ADIVINAR UN NÚMERO A BASE DE INTENTARLO
+
 package ListaDiagramasFlujo;
 
 import java.util.Random;
