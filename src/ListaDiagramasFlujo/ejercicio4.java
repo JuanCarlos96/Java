@@ -9,14 +9,21 @@ public class ejercicio4 {
         
         Scanner teclado = new Scanner(System.in);
         int a,suma=0;
+        String cadena;
         
-        System.out.println("Introduce un número");
-        a = teclado.nextInt();
+        System.out.print("Introduce un número:");
         
-        for(int i=1; i<=a; i++){
-            suma=suma+i;
+        try{
+            cadena = teclado.nextLine();
+            a = Integer.parseInt(cadena);
+
+            for(int i=1; i<=a; i++){
+                suma=suma+i;
+            }
+
+            System.out.println("La suma de los primeros "+a+" números es "+suma);
+        }catch (Exception e){
+            System.out.println("Error, al dato introducido no es un número");
         }
-        
-        System.out.println("La suma de los primeros "+a+" números es "+suma);
     }
 }

@@ -8,22 +8,30 @@ import java.util.Scanner;
 public class ejercicio3 {
     public static void main(String[] args){
         
-        Scanner teclado = new Scanner(System.in);
-        Random rnd = new Random();
-        
-        int a,aleatorio;
-        
-        //Genero un aleatorio entre 1 y 10
-        aleatorio = rnd.nextInt(10)+1;
-        
-        System.out.println("Escribe un número para averiguarlo(entre 1 y 10)");
-        a = teclado.nextInt();
-        
-        while(a!=aleatorio){
-            System.out.println("Has fallado, inténtalo de nuevo");
-            a = teclado.nextInt();
+        int numero;       
+
+        Scanner in = new Scanner(System.in);
+        Random r = new Random();
+
+        int adivinar = r.nextInt(20)+1;
+        boolean encontrado = false;
+
+        while (!encontrado) {
+            try {
+                System.out.print("Introduzca un número: ");
+                String cadena = in.nextLine();            
+
+                numero = Integer.parseInt(cadena);
+
+                if (numero==adivinar) {
+                    System.out.println("Has acertado.");
+                    encontrado = true;
+                }else{
+                    System.out.println("Try again");
+                }
+            }catch (Exception e) {
+                System.out.println("El dato introducido no es un número.");
+            }
         }
-        
-        System.out.println("Has acertado, ¡enhorabuena!");
     }
 }
