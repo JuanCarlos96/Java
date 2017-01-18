@@ -14,24 +14,27 @@ public class ejercicio3 {
         Scanner in = new Scanner(System.in);
         Random r = new Random();
 
-        int adivinar = r.nextInt(20)+1;
-        boolean encontrado = false;
+        int adivinar = r.nextInt(10)+1;
+        boolean encontrado = false, bool=false;
 
-        while (!encontrado) {
-            try {
-                System.out.print("Introduzca un número: ");
-                cadena = in.nextLine();            
+        while(!bool){
+            while (!encontrado) {
+                try {
+                    System.out.print("Introduzca un número: ");
+                    cadena = in.nextLine();            
 
-                numero = Integer.parseInt(cadena);
+                    numero = Integer.parseInt(cadena);
 
-                if (numero==adivinar) {
-                    System.out.println("Has acertado.");
-                    encontrado = true;
-                }else{
-                    System.out.println("Try again");
+                    if (numero==adivinar) {
+                        System.out.println("¡Has acertado!");
+                        encontrado = true;
+                    }else{
+                        System.out.println("Prueba otra vez");
+                    }
+                    bool=true;
+                }catch (Exception e) {
+                    System.out.println("El dato introducido no es un número.");
                 }
-            }catch (Exception e) {
-                System.out.println("El dato introducido no es un número.");
             }
         }
     }

@@ -10,20 +10,29 @@ public class ejercicio7 {
         Scanner teclado = new Scanner(System.in);
         int a,cant,max=-9999999;
         String cad1,cad2;
+        boolean bool=false;
         
-        System.out.println("Introduce cantidad de números a comparar");
-        cad1 = teclado.nextLine();
-        cant = Integer.parseInt(cad1);
-        
-        System.out.println("Introduzca los números:");
-        
-        for(int i=1; i<=cant; i++){
-            cad2 = teclado.nextLine();
-            a = Integer.parseInt(cad2);
-            if(a>max){
-                max=a;
+        while(!bool){
+            System.out.println("Introduce cantidad de números a comparar");
+            try{
+            cad1 = teclado.nextLine();
+            cant = Integer.parseInt(cad1);
+
+            System.out.println("Introduzca los números:");
+
+            for(int i=1; i<=cant; i++){
+                cad2 = teclado.nextLine();
+                a = Integer.parseInt(cad2);
+                if(a>max){
+                    max=a;
+                }
+            }
+            System.out.println("El mayor de todos los números introducidos es: "+max);
+            bool=true;
+            }catch(Exception e){
+                System.out.println("¡ERROR! Un dato introducido no es un número");
+                max=-9999999;
             }
         }
-        System.out.println("El mayor de todos los números introducidos es: "+max);
     }
 }

@@ -11,13 +11,21 @@ public class ejercicio2 {
         
         int a;
         String cad;
+        boolean bool=false;
         
-        System.out.print("Escribe un número: ");
-        cad = teclado.nextLine();
-        a = Integer.parseInt(cad);
-        
-        for(int i=1; i<=a; i++){
-            System.out.println(i);
+        while(!bool){
+            System.out.print("Escribe un número: ");
+            try{
+            cad = teclado.nextLine();
+            a = Integer.parseInt(cad);
+
+            for(int i=1; i<=a; i++){
+                System.out.println(i);
+            }
+            bool=true;
+            }catch(Exception e){
+                System.out.println("¡ERROR! El dato introducido no es un número");
+            }
         }
     }
 }

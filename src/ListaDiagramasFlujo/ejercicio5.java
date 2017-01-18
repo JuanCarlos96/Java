@@ -14,19 +14,17 @@ public class ejercicio5 {
 
         while(!bool){
             try{
-                System.out.println("Introduce dos números:");
-                cad1 = teclado.nextLine();
-                cad2 = teclado.nextLine();
-                a = Integer.parseInt(cad1);
-                b = Integer.parseInt(cad2);
-
-                while(a==b){
-                    System.out.println("Los números son iguales, vuelve a introducirlos:");
+                do{
+                    System.out.println("Introduce dos números:");
                     cad1 = teclado.nextLine();
                     cad2 = teclado.nextLine();
                     a = Integer.parseInt(cad1);
                     b = Integer.parseInt(cad2);
-                }
+                    
+                    if(a==b){
+                        System.out.println("Los números son iguales");
+                    }
+                }while(a==b);
 
                 if(a>b){
                     System.out.println(a+" es mayor que "+b);

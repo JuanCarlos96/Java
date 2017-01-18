@@ -10,20 +10,23 @@ public class ejercicio13 {
         
         int numero,mult;
         String cad;
+        boolean bool=false;
         
-        System.out.print("Introduce un número: ");
-        
-        try{
-        cad = teclado.nextLine();
-        numero = Integer.parseInt(cad);
-        
-        System.out.println("TABLA DEL "+numero);
-        for(int i=1; i<=10; i++){
-            mult=numero*i;
-            System.out.println(numero+" x "+i+" = "+mult);
-        }
-        }catch (Exception e){
-            System.out.println("¡ERROR! El dato introducido no es un número");
+        while(!bool){
+            System.out.print("Introduce un número: ");
+            try{
+            cad = teclado.nextLine();
+            numero = Integer.parseInt(cad);
+
+            System.out.println("TABLA DEL "+numero);
+            for(int i=1; i<=10; i++){
+                mult=numero*i;
+                System.out.println(numero+" x "+i+" = "+mult);
+            }
+            bool=true;
+            }catch (Exception e){
+                System.out.println("¡ERROR! El dato introducido no es un número");
+            }
         }
     }
 }

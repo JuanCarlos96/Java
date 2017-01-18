@@ -11,26 +11,29 @@ public class ejercicio8 {
         
         int a,par,impar,sumapar=0,sumaimpar=0;
         String cad;
+        boolean bool=false;
         
-        System.out.println("Introduce un número");
-        
-        try{
-            cad = teclado.nextLine();
-            a = Integer.parseInt(cad);
+        while(!bool){
+            System.out.println("Introduce un número");
+            try{
+                cad = teclado.nextLine();
+                a = Integer.parseInt(cad);
 
-            for(int i=1; i<=a; i++){
-                if(i%2==0){
-                    par=i;
-                    sumapar+=par;
-                }else{
-                    impar=i;
-                    sumaimpar+=impar;
+                for(int i=1; i<=a; i++){
+                    if(i%2==0){
+                        par=i;
+                        sumapar+=par;
+                    }else{
+                        impar=i;
+                        sumaimpar+=impar;
+                    }
                 }
+                System.out.println("La suma de los pares hasta "+a+" es "+sumapar);
+                System.out.println("La suma de los impares hasta "+a+" es "+sumaimpar);
+                bool=true;
+            }catch (Exception e){
+                System.out.println("¡ERROR! El dato introducido no es un número");
             }
-            System.out.println("La suma de los pares hasta "+a+" es "+sumapar);
-            System.out.println("La suma de los impares hasta "+a+" es "+sumaimpar);
-        }catch (Exception e){
-            System.out.println("¡ERROR! El dato introducido no es un número");
         }
     }
 }

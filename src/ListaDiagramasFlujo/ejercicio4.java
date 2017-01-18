@@ -10,20 +10,23 @@ public class ejercicio4 {
         Scanner teclado = new Scanner(System.in);
         int a,suma=0;
         String cadena;
+        boolean bool=false;
         
-        System.out.print("Introduce un número:");
-        
-        try{
-            cadena = teclado.nextLine();
-            a = Integer.parseInt(cadena);
+        while(!bool){
+            System.out.print("Introduce un número:");
+            try{
+                cadena = teclado.nextLine();
+                a = Integer.parseInt(cadena);
 
-            for(int i=1; i<=a; i++){
-                suma=suma+i;
+                for(int i=1; i<=a; i++){
+                    suma=suma+i;
+                }
+
+                System.out.println("La suma de los primeros "+a+" números es "+suma);
+                bool=true;
+            }catch (Exception e){
+                System.out.println("Error, al dato introducido no es un número");
             }
-
-            System.out.println("La suma de los primeros "+a+" números es "+suma);
-        }catch (Exception e){
-            System.out.println("Error, al dato introducido no es un número");
         }
     }
 }
