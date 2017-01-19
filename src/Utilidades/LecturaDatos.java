@@ -12,16 +12,21 @@ public class LecturaDatos {
     }
     
     public int introducirEntero(){
-        int entero = 0;
         String cadena;
-        
-        try{
-            cadena = teclado.nextLine();
-            entero = Integer.parseInt(cadena);
-        }catch (Exception e){
-            System.out.println("ERROR");
+        int num = 0;
+        boolean bool=false;
+  
+        while(!bool){
+            System.out.print("Introduce un número:");
+            try{
+                cadena = teclado.nextLine();
+                num = Integer.parseInt(cadena);
+                bool = true;
+            }catch (Exception e){
+                System.out.println("ERROR");
+            }
         }
         
-        return entero;
+        return num;
     }
 }
