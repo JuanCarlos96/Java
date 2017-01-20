@@ -8,7 +8,7 @@ public class LecturaDatos {
     public final int ERROR = -900000;
 
     public LecturaDatos() {
-        this.teclado = new Scanner(System.in);
+        teclado = new Scanner(System.in);
     }
     
     public int introducirEntero(){
