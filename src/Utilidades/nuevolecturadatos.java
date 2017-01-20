@@ -26,7 +26,7 @@ public class nuevolecturadatos {
     }
     
     public int leerenteroobligado(){
-        int resultado = ERROR;
+        int resultado;
         
         do{
             resultado = leerentero();
