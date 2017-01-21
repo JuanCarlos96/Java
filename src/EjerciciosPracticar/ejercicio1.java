@@ -1,6 +1,6 @@
 //SUMAR DOS NÚMEROS LEÍDOS POR TECLADO Y MOSTRAR SU SUMA
 
-package EjerciciosPraticar;
+package EjerciciosPracticar;
 
 import java.util.Scanner;
 

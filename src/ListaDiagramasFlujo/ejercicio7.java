@@ -13,7 +13,7 @@ public class ejercicio7 {
         boolean bool=false;
         
         while(!bool){
-            System.out.println("Introduce cantidad de números a comparar");
+            System.out.print("Introduce cantidad de números a comparar: ");
             try{
             cad1 = teclado.nextLine();
             cant = Integer.parseInt(cad1);
